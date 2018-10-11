@@ -16,13 +16,30 @@
 
 + (LGLocker *)shareInstance;
 
-/** 检测当前点控是否可用 */
+/**
+ 检测当前点控是否可用
+
+ @param domain 域名(http://ip:port)
+ @param sysID 系统ID
+ @param pointID 点ID
+ @param completion 请求回调
+ */
 - (void)setNewLockPointWithDomain:(NSString *)domain sysID:(NSString *)sysID pointID:(NSString *)pointID completion:(void (^)(NSError *error))completion;
 
-/** 维持当前点控 */
+/**
+ 维持当前点控
+
+ @param sysID 系统ID
+ @param completion 请求回调
+ */
 - (void)refreshLockPointWithSysID:(NSString *)sysID Completion:(void (^)(NSError *error))completion;
 
-/** 释放当前点控 */
+/**
+ 释放当前点控
+
+ @param sysID 系统ID
+ @param completion 请求回调
+ */
 - (void)freeLockPointWithWithSysID:(NSString *)sysID Completion:(void (^)(NSError *error))completion;
 
 /** 获取锁控信息 */
@@ -31,7 +48,10 @@
 /** 点控是否有效 */
 - (BOOL)pointValidityWithSysID:(NSString *)sysID;
 
+/** 显示点控无效视图 */
 - (void)showLockViewOnView:(UIView *) superView  sysID:(NSString *)sysID;
+
+/** 移除点控无效视图 */
 - (void)removeLockView;
 
 /** 开启定时维持点控 */
