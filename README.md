@@ -29,6 +29,7 @@ pod 'LGLocker'
     }];
 }
 
+// 当需同时控制多个系统时，需全部检测完后，方可进行下一步
 - (void)setLockInfoWithCompletion:(void (^)(NSError *error))completion;{
     self.gotPreviewLockerInfo = NO;
     self.gotExerciseLockerInfo = NO;
