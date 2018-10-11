@@ -10,6 +10,7 @@
 #import <Masonry/Masonry.h>
 
 
+
 @interface LGLockView ()
 @property (nonatomic,strong) UIImageView *tipImage;
 @property (nonatomic,strong) UILabel *tipLab;
@@ -42,11 +43,8 @@
 - (NSBundle *)lg_dictionaryBundle{
     static NSBundle *dictionaryBundle = nil;
     if (!dictionaryBundle) {
-        NSString *bundlePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Frameworks/LGLocker.framework/LGLocker.bundle"];
-        if (![[NSFileManager defaultManager] fileExistsAtPath:bundlePath]) {
-            bundlePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"LGLocker.bundle"];
-        }
-        dictionaryBundle = [NSBundle bundleWithPath:bundlePath];
+        // 这里不使用mainBundle是为了适配pod 1.x和0.x
+        dictionaryBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[LGLockView class]] pathForResource:@"LGLocker" ofType:@"bundle"]];
     }
     return dictionaryBundle;
 }

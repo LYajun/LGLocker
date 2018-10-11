@@ -77,7 +77,7 @@
 }
 - (void)showLockViewOnView:(UIView *)superView sysID:(NSString *)sysID{
     [self removeLockView];
-    if (![self pointValidityWithSysID:@"510"]) {
+    if (![self pointValidityWithSysID:sysID]) {
         self.lockView = [LGLockView showOnView:superView];
         LGLockModel *lockModel = [self lockInfoWithSysID:sysID];
         self.lockView.errorMsg = lockModel.errorMsg;
