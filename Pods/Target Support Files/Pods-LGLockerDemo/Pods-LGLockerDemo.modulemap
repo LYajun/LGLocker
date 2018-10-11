@@ -1,0 +1,6 @@
+framework module Pods_LGLockerDemo {
+  umbrella header "Pods-LGLockerDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

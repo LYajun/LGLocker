@@ -1,0 +1,6 @@
+framework module LGAuthentication {
+  umbrella header "LGAuthentication.h"
+
+  export *
+  module * { export * }
+}

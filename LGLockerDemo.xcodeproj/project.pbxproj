@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA531003216D953B000D92F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA531002216D953B000D92F2 /* AppDelegate.m */; };
+		BA531006216D953B000D92F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA531005216D953B000D92F2 /* ViewController.m */; };
+		BA531009216D953B000D92F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA531007216D953B000D92F2 /* Main.storyboard */; };
+		BA53100B216D953D000D92F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA53100A216D953D000D92F2 /* Assets.xcassets */; };
+		BA53100E216D953D000D92F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA53100C216D953D000D92F2 /* LaunchScreen.storyboard */; };
+		BA531011216D953D000D92F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA531010216D953D000D92F2 /* main.m */; };
+		BA531021216D9A10000D92F2 /* NSString+LGEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = BA531020216D9A10000D92F2 /* NSString+LGEncrypt.m */; };
+		BA531027216DA548000D92F2 /* LGLockRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = BA531026216DA548000D92F2 /* LGLockRequester.m */; };
+		BA53102B216DA5CC000D92F2 /* LGLocker.m in Sources */ = {isa = PBXBuildFile; fileRef = BA53102A216DA5CC000D92F2 /* LGLocker.m */; };
+		BA531031216DA856000D92F2 /* LGWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BA53102F216DA856000D92F2 /* LGWeakTimer.m */; };
+		BA531034216DA9F2000D92F2 /* LGLockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA531033216DA9F2000D92F2 /* LGLockModel.m */; };
+		BAE142C8216F398F0062D127 /* LGAuthentication.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BAE142C6216F398E0062D127 /* LGAuthentication.bundle */; };
+		BAE142C9216F398F0062D127 /* LGAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE142C7216F398E0062D127 /* LGAuthentication.framework */; };
+		BAE142CB216F3A650062D127 /* LGLocker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BAE142CA216F3A650062D127 /* LGLocker.bundle */; };
+		BAE142CE216F3A730062D127 /* LGLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE142CD216F3A730062D127 /* LGLockView.m */; };
+		BAE142D0216F42AD0062D127 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE142CF216F42AD0062D127 /* ImageIO.framework */; };
+		BAE142D2216F42B50062D127 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE142D1216F42B50062D127 /* libz.tbd */; };
+		BAE142D4216F42BA0062D127 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE142D3216F42BA0062D127 /* libsqlite3.tbd */; };
+		BAE142D6216F42C30062D127 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE142D5216F42C30062D127 /* libicucore.tbd */; };
+		BAE142D8216F42CC0062D127 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE142D7216F42CB0062D127 /* libstdc++.tbd */; };
+		BAE142DA216F42DC0062D127 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE142D9216F42DC0062D127 /* CoreTelephony.framework */; };
+		E26EAF01CA1D967740748F78 /* Pods_LGLockerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE3210532023E3588111773 /* Pods_LGLockerDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		851CCA9E91C726303616450A /* Pods-LGLockerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGLockerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGLockerDemo/Pods-LGLockerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		961DC61C606689264B911BA9 /* Pods-LGLockerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGLockerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LGLockerDemo/Pods-LGLockerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AEE3210532023E3588111773 /* Pods_LGLockerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGLockerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA530FFE216D953B000D92F2 /* LGLockerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGLockerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA531001216D953B000D92F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA531002216D953B000D92F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA531004216D953B000D92F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BA531005216D953B000D92F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA531008216D953B000D92F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA53100A216D953D000D92F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA53100D216D953D000D92F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA53100F216D953D000D92F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA531010216D953D000D92F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA53101F216D9A10000D92F2 /* NSString+LGEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LGEncrypt.h"; sourceTree = "<group>"; };
+		BA531020216D9A10000D92F2 /* NSString+LGEncrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LGEncrypt.m"; sourceTree = "<group>"; };
+		BA531025216DA548000D92F2 /* LGLockRequester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLockRequester.h; sourceTree = "<group>"; };
+		BA531026216DA548000D92F2 /* LGLockRequester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGLockRequester.m; sourceTree = "<group>"; };
+		BA531029216DA5CC000D92F2 /* LGLocker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLocker.h; sourceTree = "<group>"; };
+		BA53102A216DA5CC000D92F2 /* LGLocker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGLocker.m; sourceTree = "<group>"; };
+		BA53102F216DA856000D92F2 /* LGWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGWeakTimer.m; sourceTree = "<group>"; };
+		BA531030216DA856000D92F2 /* LGWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGWeakTimer.h; sourceTree = "<group>"; };
+		BA531032216DA9F2000D92F2 /* LGLockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLockModel.h; sourceTree = "<group>"; };
+		BA531033216DA9F2000D92F2 /* LGLockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGLockModel.m; sourceTree = "<group>"; };
+		BAE142C6216F398E0062D127 /* LGAuthentication.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LGAuthentication.bundle; sourceTree = "<group>"; };
+		BAE142C7216F398E0062D127 /* LGAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LGAuthentication.framework; sourceTree = "<group>"; };
+		BAE142CA216F3A650062D127 /* LGLocker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LGLocker.bundle; sourceTree = "<group>"; };
+		BAE142CC216F3A730062D127 /* LGLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGLockView.h; sourceTree = "<group>"; };
+		BAE142CD216F3A730062D127 /* LGLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGLockView.m; sourceTree = "<group>"; };
+		BAE142CF216F42AD0062D127 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		BAE142D1216F42B50062D127 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BAE142D3216F42BA0062D127 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		BAE142D5216F42C30062D127 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		BAE142D7216F42CB0062D127 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		BAE142D9216F42DC0062D127 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA530FFB216D953B000D92F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE142DA216F42DC0062D127 /* CoreTelephony.framework in Frameworks */,
+				BAE142D8216F42CC0062D127 /* libstdc++.tbd in Frameworks */,
+				BAE142D6216F42C30062D127 /* libicucore.tbd in Frameworks */,
+				BAE142D4216F42BA0062D127 /* libsqlite3.tbd in Frameworks */,
+				BAE142D2216F42B50062D127 /* libz.tbd in Frameworks */,
+				BAE142D0216F42AD0062D127 /* ImageIO.framework in Frameworks */,
+				BAE142C9216F398F0062D127 /* LGAuthentication.framework in Frameworks */,
+				E26EAF01CA1D967740748F78 /* Pods_LGLockerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E38AFD30658EF1A8D1E0DAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAE142D9216F42DC0062D127 /* CoreTelephony.framework */,
+				BAE142D7216F42CB0062D127 /* libstdc++.tbd */,
+				BAE142D5216F42C30062D127 /* libicucore.tbd */,
+				BAE142D3216F42BA0062D127 /* libsqlite3.tbd */,
+				BAE142D1216F42B50062D127 /* libz.tbd */,
+				BAE142CF216F42AD0062D127 /* ImageIO.framework */,
+				AEE3210532023E3588111773 /* Pods_LGLockerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69626EA5618759890E62063A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				851CCA9E91C726303616450A /* Pods-LGLockerDemo.debug.xcconfig */,
+				961DC61C606689264B911BA9 /* Pods-LGLockerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA530FF5216D953B000D92F2 = {
+			isa = PBXGroup;
+			children = (
+				BA531017216D9576000D92F2 /* LGLocker */,
+				BA531000216D953B000D92F2 /* LGLockerDemo */,
+				BA530FFF216D953B000D92F2 /* Products */,
+				69626EA5618759890E62063A /* Pods */,
+				2E38AFD30658EF1A8D1E0DAE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA530FFF216D953B000D92F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA530FFE216D953B000D92F2 /* LGLockerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA531000216D953B000D92F2 /* LGLockerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BAE142C5216F398E0062D127 /* LGAuthentication */,
+				BA531001216D953B000D92F2 /* AppDelegate.h */,
+				BA531002216D953B000D92F2 /* AppDelegate.m */,
+				BA531004216D953B000D92F2 /* ViewController.h */,
+				BA531005216D953B000D92F2 /* ViewController.m */,
+				BA531007216D953B000D92F2 /* Main.storyboard */,
+				BA53100A216D953D000D92F2 /* Assets.xcassets */,
+				BA53100C216D953D000D92F2 /* LaunchScreen.storyboard */,
+				BA53100F216D953D000D92F2 /* Info.plist */,
+				BA531010216D953D000D92F2 /* main.m */,
+			);
+			path = LGLockerDemo;
+			sourceTree = "<group>";
+		};
+		BA531017216D9576000D92F2 /* LGLocker */ = {
+			isa = PBXGroup;
+			children = (
+				BAE142CA216F3A650062D127 /* LGLocker.bundle */,
+				BA531029216DA5CC000D92F2 /* LGLocker.h */,
+				BA53102A216DA5CC000D92F2 /* LGLocker.m */,
+				BA531032216DA9F2000D92F2 /* LGLockModel.h */,
+				BA531033216DA9F2000D92F2 /* LGLockModel.m */,
+				BA531025216DA548000D92F2 /* LGLockRequester.h */,
+				BA531026216DA548000D92F2 /* LGLockRequester.m */,
+				BA531030216DA856000D92F2 /* LGWeakTimer.h */,
+				BA53102F216DA856000D92F2 /* LGWeakTimer.m */,
+				BA53101F216D9A10000D92F2 /* NSString+LGEncrypt.h */,
+				BA531020216D9A10000D92F2 /* NSString+LGEncrypt.m */,
+				BAE142CC216F3A730062D127 /* LGLockView.h */,
+				BAE142CD216F3A730062D127 /* LGLockView.m */,
+			);
+			path = LGLocker;
+			sourceTree = "<group>";
+		};
+		BAE142C5216F398E0062D127 /* LGAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				BAE142C6216F398E0062D127 /* LGAuthentication.bundle */,
+				BAE142C7216F398E0062D127 /* LGAuthentication.framework */,
+			);
+			path = LGAuthentication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA530FFD216D953B000D92F2 /* LGLockerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA531014216D953D000D92F2 /* Build configuration list for PBXNativeTarget "LGLockerDemo" */;
+			buildPhases = (
+				E61B62F42568FFFC4E0A97AC /* [CP] Check Pods Manifest.lock */,
+				BA530FFA216D953B000D92F2 /* Sources */,
+				BA530FFB216D953B000D92F2 /* Frameworks */,
+				BA530FFC216D953B000D92F2 /* Resources */,
+				49ADF222F6E6CC0B66FE01F5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LGLockerDemo;
+			productName = LGLockerDemo;
+			productReference = BA530FFE216D953B000D92F2 /* LGLockerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA530FF6216D953B000D92F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "刘亚军";
+				TargetAttributes = {
+					BA530FFD216D953B000D92F2 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = BA530FF9216D953B000D92F2 /* Build configuration list for PBXProject "LGLockerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA530FF5216D953B000D92F2;
+			productRefGroup = BA530FFF216D953B000D92F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA530FFD216D953B000D92F2 /* LGLockerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA530FFC216D953B000D92F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA53100E216D953D000D92F2 /* LaunchScreen.storyboard in Resources */,
+				BA53100B216D953D000D92F2 /* Assets.xcassets in Resources */,
+				BAE142C8216F398F0062D127 /* LGAuthentication.bundle in Resources */,
+				BAE142CB216F3A650062D127 /* LGLocker.bundle in Resources */,
+				BA531009216D953B000D92F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49ADF222F6E6CC0B66FE01F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LGLockerDemo/Pods-LGLockerDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LGLockerDemo/Pods-LGLockerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E61B62F42568FFFC4E0A97AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LGLockerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA530FFA216D953B000D92F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE142CE216F3A730062D127 /* LGLockView.m in Sources */,
+				BA53102B216DA5CC000D92F2 /* LGLocker.m in Sources */,
+				BA531006216D953B000D92F2 /* ViewController.m in Sources */,
+				BA531011216D953D000D92F2 /* main.m in Sources */,
+				BA531021216D9A10000D92F2 /* NSString+LGEncrypt.m in Sources */,
+				BA531031216DA856000D92F2 /* LGWeakTimer.m in Sources */,
+				BA531034216DA9F2000D92F2 /* LGLockModel.m in Sources */,
+				BA531003216D953B000D92F2 /* AppDelegate.m in Sources */,
+				BA531027216DA548000D92F2 /* LGLockRequester.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA531007216D953B000D92F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA531008216D953B000D92F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA53100C216D953D000D92F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA53100D216D953D000D92F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA531012216D953D000D92F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA531013216D953D000D92F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA531015216D953D000D92F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 851CCA9E91C726303616450A /* Pods-LGLockerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z35S33J39R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LGLockerDemo/LGAuthentication",
+				);
+				INFOPLIST_FILE = LGLockerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Masonry\"",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lancoo.LGLockerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA531016216D953D000D92F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 961DC61C606689264B911BA9 /* Pods-LGLockerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z35S33J39R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LGLockerDemo/LGAuthentication",
+				);
+				INFOPLIST_FILE = LGLockerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Masonry\"",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lancoo.LGLockerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA530FF9216D953B000D92F2 /* Build configuration list for PBXProject "LGLockerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA531012216D953D000D92F2 /* Debug */,
+				BA531013216D953D000D92F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA531014216D953D000D92F2 /* Build configuration list for PBXNativeTarget "LGLockerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA531015216D953D000D92F2 /* Debug */,
+				BA531016216D953D000D92F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA530FF6216D953B000D92F2 /* Project object */;
+}
