@@ -12,7 +12,7 @@ pod 'LGLocker'
 1、检测当前点控是否可用
 
 应用场景：
-	登录成功后调用
+	登录成功后调用,并且只有当检测当前点控有结果时才可进入主界面
 	
 ```objective-c
 - (void)login{
@@ -92,7 +92,7 @@ pod 'LGLocker'
 	
 ```objective-c
 - (void)logout{
-    [[LGLocker shareInstance] freeLockPointWithWithSysID:sysID Completion:nil];
+    [[LGLocker shareInstance] freeLockPointWithWithSysID:@“510” Completion:nil];
     [[LGLocker shareInstance] stopTimerRefreshLockPoint];
     Authentication *auth = [[Authentication alloc]init];
     [auth logOut];
